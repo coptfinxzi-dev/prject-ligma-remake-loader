@@ -22,6 +22,7 @@ G2L["1"]["ResetOnSpawn"] = false;
 G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["BackgroundTransparency"] = 1; -- Added: Makes background transparent
 G2L["2"]["Image"] = [[rbxassetid://139515100545097]];
 G2L["2"]["Size"] = UDim2.new(0, 113, 0, 113);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -55,7 +56,7 @@ G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]]
 G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["Size"] = UDim2.new(0, 291, 0, 100);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Text"] = [[project fynxzi exe
+G2L["6"]["Text"] = [[project ligma remake
 by fynxzi the best executor 
 for roblox exploiters]];
 
