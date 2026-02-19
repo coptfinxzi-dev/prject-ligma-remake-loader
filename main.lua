@@ -13,6 +13,7 @@ local G2L = {};
 G2L["1"] = Instance.new("ScreenGui");
 G2L["1"]["Name"] = [[ligamremakefynxzi]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
 
 -- StarterGui.ligamremakefynxzi.ImageLabel
 G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
