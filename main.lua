@@ -7,41 +7,41 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 8 | Scripts: 2 | Modules: 0 | Tags: 0
+-- Instances: 7 | Scripts: 1 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.ligmaloader
+-- StarterGui.ligma loader
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
-G2L["1"]["Name"] = [[ligmaloader]];
+G2L["1"]["Name"] = [[ligma loader]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.ligmaloader.ImageLabel
+-- StarterGui.ligma loader.ImageLabel
 G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2"]["Image"] = [[rbxassetid://139515100545097]];
+G2L["2"]["Image"] = [[rbxassetid://87162794]];
 G2L["2"]["Size"] = UDim2.new(0, 122, 0, 115);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["BackgroundTransparency"] = 1;
 G2L["2"]["Position"] = UDim2.new(0.43172, 0, 0.38194, 0);
 
 
--- StarterGui.ligmaloader.ImageLabel.UICorner
-G2L["3"] = Instance.new("UICorner", G2L["2"]);
-G2L["3"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.ligmaloader.ImageLabel.LocalScript
-G2L["4"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.ligma loader.ImageLabel.LocalScript
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
 
 
 
--- StarterGui.ligmaloader.ImageLabel.Frame
+-- StarterGui.ligma loader.ImageLabel.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+G2L["4"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.ligma loader.ImageLabel.Frame
 G2L["5"] = Instance.new("Frame", G2L["2"]);
 G2L["5"]["Visible"] = false;
 G2L["5"]["BorderSizePixel"] = 0;
@@ -51,12 +51,12 @@ G2L["5"]["Position"] = UDim2.new(0.89344, 0, 0.1913, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
--- StarterGui.ligmaloader.ImageLabel.Frame.UIStroke
+-- StarterGui.ligma loader.ImageLabel.Frame.UIStroke
 G2L["6"] = Instance.new("UIStroke", G2L["5"]);
 
 
 
--- StarterGui.ligmaloader.ImageLabel.Frame.TextLabel
+-- StarterGui.ligma loader.ImageLabel.Frame.TextLabel
 G2L["7"] = Instance.new("TextLabel", G2L["5"]);
 G2L["7"]["TextWrapped"] = true;
 G2L["7"]["BorderSizePixel"] = 0;
@@ -74,14 +74,9 @@ remake by fynxzi]];
 G2L["7"]["Position"] = UDim2.new(-0.00023, 0, 0, 0);
 
 
--- StarterGui.ligmaloader.LocalScript
-G2L["8"] = Instance.new("LocalScript", G2L["1"]);
-
-
-
--- StarterGui.ligmaloader.ImageLabel.LocalScript
-local function C_4()
-local script = G2L["4"];
+-- StarterGui.ligma loader.ImageLabel.LocalScript
+local function C_3()
+local script = G2L["3"];
 	local TweenService = game:GetService("TweenService")
 	
 	local guiObject = script.Parent
@@ -110,13 +105,6 @@ local script = G2L["4"];
 	end
 	
 end;
-task.spawn(C_4);
--- StarterGui.ligmaloader.LocalScript
-local function C_8()
-local script = G2L["8"];
-	script.Parent.ResetOnSpawn = false
-	script.Parent.IgnoreGuiInset = true
-end;
-task.spawn(C_8);
+task.spawn(C_3);
 
 return G2L["1"], require;
