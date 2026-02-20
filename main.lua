@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 7 | Scripts: 1 | Modules: 0 | Tags: 0
+-- Instances: 8 | Scripts: 2 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ligma loader
@@ -47,7 +47,7 @@ G2L["5"]["Visible"] = false;
 G2L["5"]["BorderSizePixel"] = 0;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["5"]["Size"] = UDim2.new(0, 264, 0, 71);
-G2L["5"]["Position"] = UDim2.new(0.89344, 0, 0.1913, 0);
+G2L["5"]["Position"] = UDim2.new(1, 0, 0.1913, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -72,6 +72,11 @@ G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["Text"] = [[project ligma 
 remake by fynxzi]];
 G2L["7"]["Position"] = UDim2.new(-0.00023, 0, 0, 0);
+
+
+-- StarterGui.ligma loader.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["1"]);
+
 
 
 -- StarterGui.ligma loader.ImageLabel.LocalScript
@@ -106,5 +111,12 @@ local script = G2L["3"];
 	
 end;
 task.spawn(C_3);
+-- StarterGui.ligma loader.LocalScript
+local function C_8()
+local script = G2L["8"];
+	local gui = script.Parent
+	gui.DisplayOrder = 1000000
+end;
+task.spawn(C_8);
 
 return G2L["1"], require;
